@@ -174,7 +174,8 @@ body {
   width: 135px;
 }
 
-.fas {
+.fa-minus,
+.fa-plus {
   color: #828282;
   padding: 4px;
   background-color: #e0e0e0;
