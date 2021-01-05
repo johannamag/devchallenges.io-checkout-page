@@ -254,6 +254,9 @@ hr {
   .grid {
     flex-direction: column-reverse;
   }
+  .card {
+    margin-left: 0;
+  }
   .cart {
     margin-bottom: 40px;
   }
