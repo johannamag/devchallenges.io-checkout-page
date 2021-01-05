@@ -31,9 +31,7 @@ body {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  display: flex;
 }
 
 .form {
@@ -73,10 +71,14 @@ body {
 
 .input-field {
   font-size: 16px;
-  color: #828282;
+  color: #000;
   padding-left: 10px;
   border-width: 0px;
   outline-width: 0;
+}
+
+.input-field:placeholder {
+  color: #828282;
 }
 
 .check {
@@ -113,11 +115,15 @@ body {
   color: #f2994a;
 }
 
+.cart {
+  width: 100%;
+}
+
 .card {
   padding: 25px;
   background-color: #f2f2f2;
   border-radius: 12px;
-  width: 380px;
+  max-width: 380px;
   margin-left: auto;
 }
 
@@ -233,4 +239,53 @@ hr {
 
 .link:hover {
   color: #f2994a;
+}
+
+@media screen and (max-width: 851px) {
+  .card {
+    margin-left: 10px;
+  }
+  .product-image {
+    width: 122px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    flex-direction: column-reverse;
+  }
+  .cart {
+    margin-bottom: 40px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .product-name {
+    font-size: 12px;
+  }
+  .price {
+    font-size: 14px;
+  }
+  .regular {
+    font-size: 10px;
+  }
+  .cart-text {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cart {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .counter {
+    width: 100%;
+    padding: 5px 10px;
+  }
 }
