@@ -144,9 +144,27 @@
                     <span class="regular">$94.99</span>
                   </p>
                   <div class="counter">
-                    <i class="fas fa-minus"></i>
-                    <div class="value">1</div>
-                    <i class="fas fa-plus"></i>
+                    <button
+                      type="button"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      class="btn-cart"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="number"
+                      id="quantity"
+                      class="value"
+                      value="1"
+                      min="0"
+                    />
+                    <button
+                      type="button"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      class="btn-cart"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -159,9 +177,27 @@
                     <span class="regular">$124.99</span>
                   </p>
                   <div class="counter">
-                    <i class="fas fa-minus"></i>
-                    <div class="value">1</div>
-                    <i class="fas fa-plus"></i>
+                    <button
+                      type="button"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      class="btn-cart"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="number"
+                      id="quantity"
+                      class="value"
+                      value="1"
+                      min="0"
+                    />
+                    <button
+                      type="button"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      class="btn-cart"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </div>
