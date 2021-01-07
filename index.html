@@ -41,6 +41,8 @@
                     class="input-field"
                     name="email"
                     placeholder="Enter your e-mail..."
+                    id="email"
+                    required
                   />
                 </div>
                 <label class="label" for="phone">Phone</label>
@@ -51,6 +53,8 @@
                     class="input-field"
                     name="phone"
                     placeholder="Enter your phone..."
+                    id="phone"
+                    required
                   />
                 </div>
               </div>
@@ -66,6 +70,8 @@
                     class="input-field"
                     name="name"
                     placeholder="Your name..."
+                    id="name"
+                    required
                   />
                 </div>
                 <label class="label" for="address">Address</label>
@@ -76,6 +82,8 @@
                     class="input-field"
                     name="address"
                     placeholder="Your address..."
+                    id="address"
+                    required
                   />
                 </div>
                 <label class="label" for="city">City</label>
@@ -86,6 +94,8 @@
                     class="input-field"
                     name="city"
                     placeholder="Your city..."
+                    id="city"
+                    required
                   />
                 </div>
                 <div class="next">
@@ -119,19 +129,27 @@
                         class="input-field"
                         name="postal"
                         placeholder="Your postal code..."
+                        id="postal"
+                        required
                       />
                     </div>
                   </div>
                 </div>
                 <div class="check">
-                  <input class="check-box" type="checkbox" name="check" />
+                  <input
+                    class="check-box"
+                    type="checkbox"
+                    name="check"
+                    required
+                  />
                   <label for="check" class="label check-label"
                     >Save this information for next time.</label
                   >
                 </div>
               </div>
             </form>
-            <a href="#" class="btn">Continue</a>
+            <div class="error-message"></div>
+            <button type="submit" href="#" class="btn">Continue</button>
           </div>
           <div class="cart">
             <div class="card">
@@ -224,6 +242,5 @@
         </div>
       </div>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>

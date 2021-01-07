@@ -108,6 +108,7 @@ body {
   text-decoration: none;
   border: 1px solid #f2994a;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -211,6 +212,11 @@ input[type="number"]::-webkit-outer-spin-button {
   outline-width: 0;
   font-size: 16px;
   color: #333333;
+}
+
+.error-message {
+  font-size: 14px;
+  color: #f2994a;
 }
 
 .last {
